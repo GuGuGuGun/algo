@@ -1,10 +1,9 @@
-# 考研算法笔记网站（Labelu）
+# 考研算法笔记网站
 
 前后端分离项目，面向考研 408 与复试机试：
 
 - 后端：Django + DRF + MySQL
 - 前端：Vue 3 + Vite
-- 环境：`conda` 环境名 `labelu`
 
 ## 目录结构
 
@@ -30,20 +29,19 @@ t10/
 	      └─ style.css
 ```
 
-## 后端启动（labelu 环境）
+## 后端启动
 
 1. 激活环境并安装依赖
 
 ```powershell
-conda activate labelu
 cd backend
 pip install -r requirements.txt
 ```
 
 2. 创建数据库（你提供的 MySQL 账号）
 
-- 用户：`root`
-- 密码：`1314520Luo`
+- 用户：`Username`
+- 密码：`Userpassword`
 
 ```sql
 CREATE DATABASE IF NOT EXISTS labelu_algo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
