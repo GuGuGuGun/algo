@@ -144,6 +144,7 @@
                   <span v-else>暂无</span>
                 </div>
               </div>
+              <AlgorithmDemo :topic-title="topic.title" />
               <p class="topic-note">{{ topic.note }}</p>
               <p class="topic-tip"><strong>应试提示：</strong>{{ topic.exam_tip || "暂无" }}</p>
               <pre class="topic-code"><code>{{ getTemplateCode(topic) }}</code></pre>
@@ -202,6 +203,7 @@
 <script setup>
 import { computed, onMounted, ref, watch } from "vue";
 import AdminPanel from "./components/AdminPanel.vue";
+import AlgorithmDemo from "./components/AlgorithmDemo.vue";
 
 const API_BASE = "http://127.0.0.1:8000/api";
 
